@@ -1,0 +1,29 @@
+.main{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.content{
+    height: 400px;
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+ 
+  .content h2{
+    width: 100%;
+    font-weight: bold;
+  }
+  
+ 
+  .content li{
+    padding-bottom: 10px;
+  }
+  
+  .content ul li::marker{
+    color: blue;
+  }
+
+
+
+

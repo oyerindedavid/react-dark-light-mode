@@ -8,6 +8,9 @@
 # testing
 /coverage
 
+/note.js
+/flexbox-note.css
+
 # production
 /build
 

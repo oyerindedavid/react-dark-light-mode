@@ -1,25 +1,31 @@
-import logo from './logo.svg';
+import Main from "./components/Main/Main"
+import Navbar from "./components/Navbar/Navbar"
 import './App.css';
+import { useState } from "react";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  
+  const [isLight, setMode] = useState(true)
+
+  const theme = {
+   color: isLight ? "black" : "white",
+   backgroundColor: isLight ? "white" : "black",
+  }
+
+function switchTheme(){
+  setMode(prevData => !prevData)
+}
+  
+ return (
+   <div className="wrapper" style={theme}>
+      <Navbar 
+         theme={theme}
+         switchTheme={switchTheme} 
+      />
+      <Main  />
+   </div>
+ )
 }
 
 export default App;

@@ -1,0 +1,27 @@
+.navbar{
+    display: flex;
+    height: 70px;
+    width: 100%;
+    padding: 4px 20px;
+    box-shadow: 0px 1px 4px 0px #888888;
+    border-top-right-radius: 5px;
+    position: relative;
+    z-index: 10;
+    border-top-left-radius: 5px;
+    justify-content: space-between;
+}
+
+.logo-info{
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+}
+
+.mode-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.screen-mode{
+    margin: 0px 10px;
+}

@@ -1,0 +1,100 @@
+.card{
+    display: flex;
+    width: 300px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    flex-direction: column;
+    position: relative;
+}
+
+.card-header{
+    background-color: #23252C;
+    display: flex;
+}
+
+.card-body{
+    display: flex;
+    padding: 20px;
+    background-color: #1A1B21;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content{
+    padding-top: 20px;
+}
+
+.user-info{
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.username{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.user-role{
+    display: flex;
+    justify-content: center;
+    color: #F3BF99;
+    font-size: 12.5px;
+}
+
+.user-website{
+    font-size: 10.24px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.action-buttons{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 10px;
+    justify-content: space-between;
+}
+
+.linkedIn{
+    background-color: #5093E2;
+    color: #FFFFFF;
+}
+
+.email, .linkedIn{
+  padding: 10px;
+  display: flex;
+  width: 9em;
+  justify-content: center;
+  align-items: baseline;
+  border-radius: 5px;
+}
+
+.email i, .linkedIn i{
+    margin-right: 10px;
+}
+
+.about-info{
+    font-size: 10.24px;
+}
+
+.profile{
+    object-fit: fill;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.card-footer{
+    position:absolute;
+    bottom: 0;
+    height: 7%;
+    width: 100%;
+    background-color: #161619;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
